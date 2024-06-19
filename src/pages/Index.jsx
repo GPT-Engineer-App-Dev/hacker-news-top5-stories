@@ -47,7 +47,7 @@ const Index = () => {
           />
           <div className="flex items-center ml-4">
             <span className="mr-2">Dark Mode</span>
-            <Switch checked={darkMode} onCheckedChange={setDarkMode} />
+            <Switch checked={darkMode} onCheckedChange={() => setDarkMode(!darkMode)} />
           </div>
         </div>
         <div className="grid gap-4">
